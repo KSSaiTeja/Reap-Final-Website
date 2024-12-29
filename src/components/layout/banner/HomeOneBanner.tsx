@@ -4,10 +4,10 @@ import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-import Heroimg from "public/images/banner/heroimg.jpg";
+import Heroimg from "/images/banner/heroimg.jpg";
 import star from "public/images/star.png";
 
-import letstalkfinal from "public/images/letstalkfinal.svg";
+import letstalkfinal from "/images/letstalkfinal.svg";
 import YoutubeEmbed from "@/components/youtube/YoutubeEmbed";
 import styles from "@/HomeOneBanner.module.scss";
 
