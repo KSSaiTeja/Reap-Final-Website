@@ -4,10 +4,10 @@ import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-import heroimg from "/images/banner/heroimg.jpg";
+import banneronethumb from "/public/images/banner/banner-one-thumb.png";
 import star from "public/images/star.png";
 
-import letstalkfinal from "/images/letstalkfinal.svg";
+import letstalkfinal from "/public/images/letstalkfinal.svg";
 import YoutubeEmbed from "@/components/youtube/YoutubeEmbed";
 import styles from "@/HomeOneBanner.module.scss";
 
@@ -104,8 +104,8 @@ const HomeOneBanner = () => {
           </div>
         </div>
         <Image
-          // src={banneronethumb}
-          src={heroimg}
+          src={banneronethumb}
+          // src={heroimg}
           alt="Image"
           className="banner-one-thumb d-none d-sm-block g-ban-one"
         />
