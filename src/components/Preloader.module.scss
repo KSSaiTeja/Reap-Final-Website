@@ -1,0 +1,106 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  cursor: default;
+}
+
+.preloaderContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.spinnerWrapper {
+  position: relative;
+  margin-bottom: 3.5rem;
+
+  @media (max-width: 767px) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.spinnerBg {
+  height: 9em;
+  width: 9em;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 767px) {
+    height: 7.5em;
+    width: 7.5em;
+  }
+}
+
+.spinner {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-right-color: #e3ff04;
+  border-top-color: #e3ff04;
+  clip-path: inset(0 0 50% 50%);
+}
+
+.textWrapper {
+  position: relative;
+  text-align: center;
+  user-select: none;
+}
+
+.textContainer {
+  display: flex;
+  gap: 1rem;
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 15px;
+
+  @media (max-width: 767px) {
+    font-size: 42px;
+  }
+}
+
+.letter {
+  position: relative;
+  color: #e3ff04;
+}
+
+.animatedLetter {
+  position: absolute;
+  inset: 0;
+  color: white;
+}
+
+.loadingText {
+  margin-top: 2rem;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: #e3ff04;
+}
+
+.backgroundEffect {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.backgroundContainer {
+  display: flex;
+  height: 100%;
+}
+
+.backgroundSlice {
+  flex: 1;
+  background-color: #1c1c1c;
+}

@@ -1,0 +1,104 @@
+.bannerWrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.heroTitle {
+  font-size: 100px;
+  line-height: 1.2;
+  font-weight: 900;
+  color: #E3FF04;
+}
+
+.textStroke {
+  -webkit-text-stroke: 1px #E3FF04;
+  color: transparent;
+}
+
+.creative {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+  letter-spacing: 0;
+  font-kerning: none;
+
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    color: #e2ff00;
+    -webkit-text-stroke: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: fillText 6s linear infinite;
+  }
+}
+
+@keyframes fillText {
+  0%,
+  100% {
+    width: 0;
+  }
+  45%,
+  55% {
+    width: 100%;
+  }
+}
+
+.interval {
+  display: block;
+  font-size: 80px;
+  margin-top: 20px;
+}
+
+.arrowIcon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  vertical-align: middle;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  fill: none;
+}
+
+// Responsive styles
+@media (max-width: 1200px) {
+  .heroTitle {
+    font-size: 80px;
+  }
+  .interval {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 60px;
+  }
+  .interval {
+    font-size: 48px;
+  }
+  .arrowIcon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 40px;
+  }
+  .interval {
+    font-size: 32px;
+  }
+  .arrowIcon {
+    width: 30px;
+    height: 30px;
+  }
+}
