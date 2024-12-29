@@ -4,7 +4,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-import Heroimg from "/images/banner/heroimg.jpg";
+import heroimg from "/images/banner/heroimg.jpg";
 import star from "public/images/star.png";
 
 import letstalkfinal from "/images/letstalkfinal.svg";
@@ -105,7 +105,7 @@ const HomeOneBanner = () => {
         </div>
         <Image
           // src={banneronethumb}
-          src={Heroimg}
+          src={heroimg}
           alt="Image"
           className="banner-one-thumb d-none d-sm-block g-ban-one"
         />
